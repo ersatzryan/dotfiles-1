@@ -57,6 +57,7 @@
 /.w3m
 /.weechat/logs
 /.weechat/sec.conf
+/.weechat/script
 /.weechat/weechat.log
 /.wget-hsts
 /.zcompdump
