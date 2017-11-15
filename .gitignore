@@ -55,6 +55,8 @@
 /.vim/plugged
 /.viminfo
 /.w3m
+/.weechat/logs
+/.weechat/weechat.log
 /.wget-hsts
 /.zcompdump
 /.zsh-histfile
