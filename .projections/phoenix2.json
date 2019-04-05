@@ -1,0 +1,48 @@
+{
+  "lib/*.ex": {
+    "type": "module",
+    "alternate": "test/{}_test.exs"
+  },
+
+  "test/*_test.exs": {
+    "type": "test",
+    "alternate": "lib/{}.ex"
+  },
+
+  "lib/**/controllers/*_controller.ex": {
+    "type": "controller",
+    "alternate": "test/{dirname}/controllers/{basename}_controller_test.exs"
+  },
+  "lib/**/templates/*.html.eex": {
+    "type": "template",
+    "alternate": "lib/{dirname}/views/{basename}_view.ex"
+  },
+  "lib/**/views/*_view.ex": {
+    "type": "view",
+    "alternate": "test/{dirname}/views/{basename}_view_test.ex"
+  },
+  "lib/*/router.ex": {
+    "type": "router",
+    "alternate": "lib/{}/router.ex"
+  },
+
+  "README.md": { "type": "docs" },
+  "docs/*.md": { "type": "docs" },
+  "assets/css/*.css": { "type": "css" },
+  "assets/js/*.js": { "type": "js" },
+  "config/*.exs": { "type": "config" },
+  "config/config.exs": { "type": "config" },
+  "mix.exs": { "type": "mix" },
+
+  "priv/repo/seeds.exs": { "type": "seeds" },
+  "priv/repo/migrations/*.exs": {
+    "type": "migration",
+    "make": "mix ecto.migrate"
+  },
+
+  "*": {
+    "console": "iex -S mix phx.server",
+    "make": "mix compile",
+    "start": "mix phx.server"
+  }
+}

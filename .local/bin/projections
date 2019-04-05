@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+PROJECTIONS_PATH="$HOME/.projections"
+
+projections=()
+
+if [ -f "mix.exs" ]; then list+=('elixir'); fi
+if [ -f "web/router.ex" ]; then list+=('phoenix'); fi
+if [ -f "Rakefile" ]; then list+=('rake'); fi
+if [ -f "spec/spec_helper.rb" ]; then list+=('rspec'); fi
+if [ -f "config/routes.rb" ]; then list+=('rails'); fi
+__gemspec=(*.gemspec)
+if [ -f "${__gemspec[0]}" ]; then list+=('ruby'); fi
+
+files=''
+count=0
+while [ "x${list[count]}" != "x" ]; do
+  files="$files $PROJECTIONS_PATH/${list[count]}.json"
+  count=$((count + 1))
+done
+
+if [ $count -eq 0 ]; then exit 1; fi
+
+jq -s 'reduce .[] as $item ({}; . * $item)' $files
