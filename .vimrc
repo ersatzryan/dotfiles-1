@@ -19,6 +19,7 @@ set backspace+=eol            " allow backspacing over line breaks (join lines)
 set backspace+=indent         " allow backspacing over autoindent
 set backspace+=start          " allow backspacing over the start of insert
 set colorcolumn=81            " higlight the 81st screen column
+set confirm                   " use a dialog when an operation has to be confirmed; needed for vim-projectionist create alternate
 set cpoptions+=$              " when making a change to one line, put a $ at the end of the changed text
 set cursorline                " highlight the screen line of the cursor
 set expandtab                 " use the appropriate number of spaces to insert a <Tab>
