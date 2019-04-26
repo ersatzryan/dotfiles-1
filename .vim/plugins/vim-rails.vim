@@ -69,8 +69,8 @@ let g:rails_projections = {
       \      "test/policies/{}_policy_test.rb"
       \    ],
       \    "alternate": [
-      \      "spec/policys/{}_policy_spec.rb",
-      \      "test/policys/{}_policy_test.rb"
+      \      "spec/policies/{}_policy_spec.rb",
+      \      "test/policies/{}_policy_test.rb"
       \    ],
       \    "template": [
       \      "class {camelcase|capitalize|colons}Policy < ApplicationPolicy",
