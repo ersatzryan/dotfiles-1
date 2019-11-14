@@ -1,14 +1,24 @@
 {
   "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "markdown",
     "javascript",
-    "typescript",
-    "typescriptreact",
+    "javascriptreact",
     "json",
-    "javascriptreact"
+    "typescript",
+    "typescriptreact"
   ],
+  "coc.preferences.formatOnType": true,
   "diagnostic.errorSign": "•",
   "diagnostic.warningSign": "•",
   "diagnostic.infoSign": "•",
+  "eslint.autoFixOnSave": true,
+  "eslint.filetypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
   "html.filetypes": [
     "html",
     "handlebars",
@@ -17,12 +27,15 @@
     "typescript",
     "typescriptreact"
   ],
-  "eslint.filetypes": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
-  "suggest.noselect": false,
-  "tsserver.npm": "/usr/local/bin/npm"
+  "html.format.enable": true,
+	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
+	"prettier.requireConfig": true,
+	"suggest.acceptSuggestionOnCommitCharacter": true,
+	"suggest.noselect": false,
+	"tsserver.npm": "/usr/local/bin/npm",
+	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true
 }
