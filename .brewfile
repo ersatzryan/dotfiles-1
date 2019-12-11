@@ -39,28 +39,16 @@ brew 'yarn'
 cask_args appdir: '/Applications'
 cask '1password'
 cask 'alacritty'
-cask 'anki'
-cask 'basecamp'
-cask 'brainfm'
 cask 'discord'
-cask 'figma'
 cask 'firefox-developer-edition'
-cask 'harvest'
 cask 'mark-text'
 cask 'ngrok'
-cask 'paw'
 cask 'resilio-sync'
 cask 'sizeup'
-cask 'sketch'
-cask 'skype'
 cask 'slack'
-cask 'transmission'
 
 # Fonts
 cask 'font-hasklig'
 
 # App Store
-mas 'Gifox', id: 1082624744
-mas 'Ommwriter', id: 412347921
-mas 'Things 3', id: 904280696
-mas 'Trello', id: 1278508951
+# mas 'Trello', id: 1278508951
