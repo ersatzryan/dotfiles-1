@@ -8,15 +8,15 @@
   untrackedCache = true
 
 [user]
-  name = Eric Milford
-  email = ericmilford@gmail.com
+  name = Ryan Glover
+  email = ersatzryan@gmail.com
 
 [author]
-  name = Eric Milford
-  email = ericmilford@gmail.com
+  name = Ryan Glover
+  email = ersatzryan@gmail.com
 
 [github]
-  user = emilford
+  user = ersatzryan
 
 [color]
   ui = true
