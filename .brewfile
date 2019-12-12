@@ -43,7 +43,6 @@ cask 'discord'
 cask 'firefox-developer-edition'
 cask 'mark-text'
 cask 'ngrok'
-cask 'resilio-sync'
 cask 'sizeup'
 cask 'slack'
 
