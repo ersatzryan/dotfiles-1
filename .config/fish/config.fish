@@ -7,6 +7,7 @@ set -x CDPATH $CDPATH $HOME
 set -x CDPATH $CDPATH $HOME/Code
 
 set -x EDITOR vim
+set -x SHELL fish
 
 source $HOME/.config/fish/nord.fish
 source $HOME/.asdf/asdf.fish
@@ -20,11 +21,11 @@ abbr bu bundle update
 
 abbr g git
 
-abbr ta tmux attach -t
-abbr td tmux detach
-abbr tk tmux kill-session -t
-abbr tl tmux list-sessions
-abbr tn tmux new -s
+abbr ta tmux -S ~/.tmux.socket attach -t
+abbr td tmux -S ~/.tmux.socket detach
+abbr tk tmux -S ~/.tmux.socket kill-session -t
+abbr tl tmux -S ~/.tmux.socket list-sessions
+abbr tn tmux -S ~/.tmux.socket new -s
 
 direnv hook fish | source
 
