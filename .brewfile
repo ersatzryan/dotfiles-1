@@ -10,6 +10,7 @@ tap 'thoughtbot/formulae'
 tap 'universal-ctags/universal-ctags'
 
 # Packages
+brew 'bat'
 brew 'dasht'
 brew 'direnv'
 brew 'fish'
