@@ -37,7 +37,7 @@
   pl = pull
   pr = pull-request
   r = rebase
-  s = status
+  s = status --short
   ; sh = show
   ; st = stash
 
