@@ -46,6 +46,7 @@ cask 'ngrok'
 cask 'sizeup'
 cask 'slack'
 cask 'spectacle'
+cask 'there'
 
 # Fonts
 cask 'font-hasklig'
