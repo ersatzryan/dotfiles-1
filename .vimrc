@@ -56,6 +56,8 @@ nnoremap <down>  <c-w>-
 nnoremap <expr> k (v:count == 0 ? 'gk' : 'k')                   " move by display lines upward unless count given
 nnoremap <expr> j (v:count == 0 ? 'gj' : 'j')                   " move by display lines downward unless count given
 
+nmap ; :
+
 augroup CursorLine                                              " only highlight the screen line of the active window
   au!
   au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
